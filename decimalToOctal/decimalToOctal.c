@@ -6,6 +6,7 @@ int convertDecToOctal(int dec)
 {
     int octal = 0, i = 1;
 
+
     while (dec != 0)        // Checking if quotient is zero
     {
         octal = octal + (dec % 8) * i;    // Calculating remainders in reverse order
