@@ -1,6 +1,10 @@
+// This program calculates the total marks and average of four subjects,
+// and assigns a grade based on the average.
+
 #include <stdio.h>
 #include <math.h>
 
+// Function to take input for marks
 int input()
 {
     int marks;
@@ -16,8 +20,8 @@ int main()
     b = input();
     c = input();
     d = input();
-    int total=a + b + c + d;
-    printf("Totam marks is %d out of 100", total);
+    int total = a + b + c + d;
+    printf("Total marks is %d out of 100", total);
     int average = total / 4;
     printf("\nAverage is %d \n", average);
     if (average <= 100 && average > 90)
@@ -37,7 +41,8 @@ int main()
         printf("Student got D grade");
     }
     else
+    {
         printf("Fail");
+    }
     printf("\n");
-
 }

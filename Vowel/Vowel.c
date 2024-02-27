@@ -1,3 +1,5 @@
+// This program takes an input alphabet from the user and determines whether it is a vowel or a consonant.
+
 #include <stdio.h>
 
 int main()
@@ -42,6 +44,6 @@ int main()
         default: 
             printf("Consonant");
     }
-printf("\n");
+    printf("\n");
     return 0;
 }

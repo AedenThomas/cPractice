@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// Function to convert decimal to binary
 int convert(int n) {
     int binary = 0;
     int rem, i = 1;

@@ -1,3 +1,11 @@
+// Pattern:
+
+//      1
+//     12
+//    123
+//   1234
+//  12345
+
 #include <stdio.h>
 int main()
 {
@@ -10,11 +18,11 @@ int main()
         printf("\n");
         for (int j = 1; j <= i; j++)
         {
-            printf(" "); //printing spaces
+            printf(" "); //printing spa
         }
         for (int k = 1; k <= count; k++)
         {
-            printf("%d", k); //printing the number
+            printf("%d", k);
         }
         count++;
         

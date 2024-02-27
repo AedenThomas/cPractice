@@ -1,5 +1,8 @@
+// This program converts time given in hours and minutes to minutes.
+
 #include <stdio.h>
 
+// Function to input hours from the user
 int inputHours()
 {
     int hours;
@@ -8,6 +11,7 @@ int inputHours()
     return hours;
 }
 
+// Function to input minutes from the user
 int inputMin()
 {
     int min;
@@ -16,19 +20,22 @@ int inputMin()
     return min;
 }
 
+// Function to calculate the total minutes
 int calculate(int h, int m)
 {
     int min;
     min = h * 60 + m;
     return min;
-
 }
 
+// Function to output the converted time in minutes
 void output(int min)
 {
     printf("Converted time to minutes is: %d", min);
     printf("\n");
 }
+
+// Main function
 int main()
 {
     int h, m;

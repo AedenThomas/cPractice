@@ -1,36 +1,25 @@
+// This program demonstrates swapping two numbers using pointers.
+
 #include <stdio.h>
 
-
+// Function to swap two numbers using pointers
 void swap(int *a, int *b){
    int temp=0;
    temp=*a;
    *a=*b;
-   *b=   temp;
-
+   *b=temp;
 }
+
 int main()
 {
    int a,b;
+   
+   // Input two numbers from the user
    scanf("%d %d", &a, &b);
+   
+   // Call the swap function to swap the numbers
    swap(&a, &b);
-   printf("%d %d", a,b);
+   
+   // Print the swapped numbers
+   printf("%d %d", a, b);
 }
-
-// #include <stdio.h> 
-// int main()
-// {
-//    int x, y, temp;
- 
-//    scanf("%d%d", &x, &y);
- 
-//    printf("Before Swapping: x = %d, y = %d\n", x, y);   //x 1 y 2
- 
-//    temp = *(&x);  //value at address of x. temp=x
-//    *(&x)=*(&y);
-//    *(&y)=temp;
- 
-//    printf("After Swapping: x = %d, y = %d", x, y);
- 
-//    return 0;
-// }
- 

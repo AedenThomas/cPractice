@@ -15,10 +15,12 @@ int main()
    printf("Enter the value to insert at last position\n");
    scanf("%d", &value);
  
-  array[n] = value;
+   // Inserting the value at the last position of the array
+   array[n] = value;
  
    printf("Resultant array is\n");
  
+   // Printing the resultant array
    for (i = 0; i <= n; i++)
       printf("%d\n", array[i]);
  
